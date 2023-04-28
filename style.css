@@ -1,0 +1,54 @@
+@charset
+body{
+
+}
+.padrao{
+    display: inline-flex;
+    width: 100%;
+    height: 300px;
+}
+.padrao a {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+}
+img{
+    width: 100%;
+    height: 300px;
+}
+#icohome{
+width: 50px;
+height: 50px;
+display: flex;
+
+
+}
+#icolampada{
+    display: flex;
+    height: 50px;
+    width: 50px;
+
+}
+nav{
+    width: 100%;
+    height: max-content;
+}
+.menu {
+    display: flex;
+    margin-bottom: 2%;
+    padding: 5px;
+   
+}
+.menu a {
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 5px;
+    
+}
+.menu div {
+    right: 5%;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    
+}
