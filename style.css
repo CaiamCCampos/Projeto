@@ -6,6 +6,11 @@ body{
     display: inline-flex;
     width: 100%;
     height: 300px;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
 }
 .padrao a {
     width: max-content;
@@ -13,21 +18,37 @@ body{
     position: absolute;
 }
 img{
-    width: 100%;
-    height: 300px;
+    width: 95%;
+    height: 300px; 
+    border-radius: 10px;
 }
 #icohome{
-width: 50px;
-height: 50px;
-display: flex;
-
-
+    width: 30px;
+    height: 30px;
+    display: flex;
+    left: 3%;
+    position: absolute;
+    cursor: pointer;
+}
+.menu div a {
+    text-decoration: none;  
+}
+.padrao a:hover {
+    background-color: rgba(155, 155, 155, 0.363);
+    border-radius: 20px 20px;
+    padding: 3px;
+    width: 60px;
+    height: 60px; 
+}
+.padrao a {
+    display: flex;
+    width: 50px;
+    height: 50px;
 }
 #icolampada{
     display: flex;
-    height: 50px;
-    width: 50px;
-
+    width: 100%;
+    height: 100%;
 }
 nav{
     width: 100%;
@@ -35,18 +56,21 @@ nav{
 }
 .menu {
     display: flex;
-    margin-bottom: 2%;
+    flex-wrap: wrap;
     padding: 5px;
+    align-items: center;
+    height: 30px;
+    
    
 }
-.menu a {
+.menu  a {
     font-size: medium;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 5px;
+    
     
 }
-.menu div {
-    right: 5%;
+.menu div  {
+    right: 3%;
     width: max-content;
     height: max-content;
     position: absolute;
