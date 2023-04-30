@@ -1,6 +1,4 @@
-@charset ;
-
-
+@charset  ;
 
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script:wght@400;500;600;700&family=Mandali&display=swap');
 
@@ -15,12 +13,10 @@
     width: 100%;
     height: 300px;
     align-items: center;
-    justify-content: space-between; 
-    
-     
+    flex-direction: column;
+    flex-wrap: wrap;
+     justify-content: center;
 }
-
-
 .conteudo {
     display: flex;
     width: 100%;
@@ -49,6 +45,28 @@
     height: 300px; 
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.445) ;
+}
+#capaslogan{
+    position: absolute;
+    width: 80%;
+    height: 100px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+#capaslogan span{
+    font-family: 'Carter One', cursive; 
+    font-size: xx-large;
+    background-image: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+
+    font-weight: lighter;
+
 }
 #icohome{
     width: 30px;
@@ -84,8 +102,8 @@ nav{
     overflow: hidden;
     position: fixed;
     top: 1%;
-    background-color: rgba(141, 197, 28, 0.74);
-    box-shadow: 1px 1px 1px 1px rgba(1, 95, 1, 0.747);
+    background-image: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
+    box-shadow: 1px 1px 1px 1px rgba(6, 207, 6, 0.815);
     border-radius: 3px;
 }
 
@@ -132,6 +150,7 @@ nav{
 .conteudo h1{
     font-family: 'Mandali', sans-serif;
     color: yellowgreen;
+    font-size: x-large;
 }
 .topico{
     display: flex;
@@ -163,7 +182,37 @@ nav{
     background-size: cover;
     margin: 5%;
     border-radius: 2px;
-
-
 }
+footer{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    background-image: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 2px;
+}
+address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     
+}
+address h1{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Mandali', sans-serif;
+
+
+}   
+address span{
+    font-size: medium;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 5px rgba(5, 85, 2, 0.829);
+    font-weight: normal;
+}
+address #citacao{
+    font-family: 'Mandali', sans-serif;
+}
