@@ -8,6 +8,13 @@
     font-family: 'Mandali', sans-serif;
 */
 
+@keyframes fadein {
+  from {opacity: 0}
+  to {opacity: 1}
+ }
+html{
+    scroll-behavior: smooth;
+}
 .padrao{
     display: inline-flex;
     width: 100%;
@@ -55,6 +62,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: nowrap;
+    animation: fadein 4s linear;
 }
 #capaslogan span{
     font-family: 'Carter One', cursive; 
@@ -86,12 +94,15 @@
     padding: 3px;
     width: 60px;
     height: 60px; 
+    transition: 0.4s;
 }
 .padrao a {
     display: flex;
     width: 50px;
     height: 50px;
+    
 }
+
 #icolampada{
     display: flex;
     width: 100%;
@@ -138,6 +149,7 @@ nav{
 .padraoConteudo img:hover{
     border-radius: 10px;
     box-shadow: 5px 2px 5px 2px rgba(128, 128, 128, 0.623);
+    transition: 1s;
     
 }
 .padraoConteudo span{
@@ -145,12 +157,14 @@ nav{
     height: 250px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
+    animation: fadein 2s linear;
     
 }
 .conteudo h1{
     font-family: 'Mandali', sans-serif;
     color: yellowgreen;
     font-size: x-large;
+    animation: fadein 2s linear;
 }
 .topico{
     display: flex;
@@ -204,7 +218,7 @@ nav{
 }
 footer{
     display: flex;
-    width: 100%;
+    width: 98%;
     height: max-content;
     background-image: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
     align-items: center;
@@ -216,16 +230,13 @@ address{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;  
 }
 address h1{
     font-size: x-large;
     font-weight: bold;
     font-family: 'Mandali', sans-serif;
     margin: 0px;
-
-
 }   
 address span{
     font-size: medium;
@@ -237,77 +248,3 @@ address #citacao{
     font-family: 'Mandali', sans-serif;
 }
 /* Carrocel */
-.slider{
-    
-    height: 300px;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  .divpai{
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: space-around;
-
-  }
-  .navegation-bar{
-    
-    z-index: 1000;
-    
-    display: flex;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: baseline;
-  } 
-  
-  
-  .bar{
-    width: 70px;
-    height: 17px;
-    border: 2px solid #38a000b7;
-    margin: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .7s;
-   
-  }
-  .bar:hover{
-    background-color: #38a00069;
-  }
- .slides{
-  display: flex;
-  width: 500%;
-  height: 100%;
-  animation: fadein 4s linear;
-  flex-direction: column;
-  
- }
- @keyframes fadein {
-  from {opacity: 0}
-  to {opacity: 1}
- }
-
- .slide {
-  width: 20%;
-  transition: .6s;
- }
- .slide img{
-  width: 100%;
-  height: 100%;
- }
- #slide1:checked ~ .s1 {
-  margin-bottom: 0;
-
- }
- #slide2:checked ~ .s1 {
-  margin-bottom: -15%;
-
- }
- #slide3:checked ~ .s1 {
-  margin-bottom: -29.5%;
- }
- #slide4:checked ~ .s1 {
-  margin-bottom: -41.5%;
- }
-
