@@ -7,7 +7,11 @@
     font-family: 'Dancing Script', cursive;
     font-family: 'Mandali', sans-serif;
 */
-
+:root{
+    --fonte1:'Carter One', cursive;
+    --fonte2:'Dancing Script', cursive;
+    --fonte3:'Mandali', sans-serif;
+}
 @keyframes fadein {
   from {opacity: 0}
   to {opacity: 1}
@@ -16,7 +20,7 @@ html{
     scroll-behavior: smooth;
 }
 :target{
-    scroll-margin-top: .8em;
+    scroll-margin-top: 1em;
 }
 .padrao{
     display: inline-flex;
@@ -33,7 +37,8 @@ html{
     height: max-content;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;  
+    justify-content: space-around; 
+    margin: 5% 0% 5% 0%;  
 }
 .padraoConteudo{
     display: inline-flex;
@@ -68,7 +73,7 @@ html{
     animation: fadein 4s linear;
 }
 #capaslogan span{
-    font-family: 'Carter One', cursive; 
+    font-family: var(--fonte1);
     font-size: xx-large;
     background-image: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
     background-clip: text;
@@ -132,7 +137,7 @@ nav{
 }
 .menu  a {
     font-size: medium;
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--fonte2);
     text-shadow: 0 px -1px 5px rgb(3, 36, 3);
     font-weight: bold;
     
@@ -164,7 +169,7 @@ nav{
     
 }
 .conteudo h1{
-    font-family: 'Mandali', sans-serif;
+    font-family: var(--fonte3);
     color: yellowgreen;
     font-size: x-large;
     animation: fadein 2s linear;
@@ -214,7 +219,7 @@ nav{
     height: 300px;
     background-image: url(imagens/paineis-solares-e-usina-eolica-fora.jpg);
     background-attachment: fixed;
-    background-position: center;
+    background-position: center top;
     background-size: cover;
     margin: 5%;
     border-radius: 2px;
