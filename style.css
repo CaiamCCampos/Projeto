@@ -165,9 +165,18 @@ nav{
     text-align: justify;
     animation: fadein 2s linear;
     margin: 3% 5% 3% 5% ;
-    overflow: scroll;
+    overflow-y: auto;
     padding: 10px;
-    
+}
+::-webkit-scrollbar{
+    background-image: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
+    width: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgba(1, 82, 1, 0.822);
 }
 .conteudo h1{
     font-family: var(--fonte3);
@@ -179,28 +188,31 @@ nav{
     display: flex;
     flex-wrap: wrap;
 }
-
-@media screen and (max-width: 470px){
-    .padraoConteudo{
+@media screen and (min-width: 800px) {
+    .padraoConteudo img {
+        width: 350px;
+        height: 350px;
+       
+    }
+}
+@media screen and (max-width: 600px){
+    .padraoConteudo {
         flex-direction: column;
         
 
     }   
 } 
-@media screen and (max-width: 470px){
+@media screen and (max-width: 600px){
     .padraoConteudo span{
         width: 250px;
         
         
     }   
 } 
-@media screen and (max-width: 500px) {
-    #capaslogan{
-        justify-content: space-around;
-    }
-}
+
 @media screen and (max-width: 500px) {
     #capaslogan span {
+        justify-content: space-around;
         font-size: medium;
         width: max-content;
         height: 40px;
