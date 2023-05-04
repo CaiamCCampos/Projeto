@@ -59,7 +59,7 @@ html{
     width: 95%;
     height: 300px; 
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.445) ;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.479) ;
 }
 #capaslogan{
     position: absolute;
@@ -79,10 +79,7 @@ html{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-
-
     font-weight: lighter;
-
 }
 #icohome{
     width: 30px;
@@ -97,7 +94,7 @@ html{
 
 }
 .padrao a:hover {
-    background-color: rgba(155, 155, 155, 0.363);
+    background-color: rgba(155, 155, 155, 0);
     border-radius: 20px 20px;
     padding: 3px;
     width: 60px;
@@ -153,10 +150,11 @@ nav{
 .padraoConteudo img {
     width: 250px;
     height: 250px;
+    margin: 3% 5% 3% 5% ;
 }
 .padraoConteudo img:hover{
     border-radius: 10px;
-    box-shadow: 5px 2px 5px 2px rgba(128, 128, 128, 0.623);
+    box-shadow: 5px 2px 5px 2px rgba(128, 128, 128, 0.582);
     transition: 1s;
     
 }
@@ -166,6 +164,9 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     animation: fadein 2s linear;
+    margin: 3% 5% 3% 5% ;
+    overflow: scroll;
+    padding: 10px;
     
 }
 .conteudo h1{
@@ -189,7 +190,7 @@ nav{
 @media screen and (max-width: 470px){
     .padraoConteudo span{
         width: 250px;
-        margin-top: 4%;
+        
         
     }   
 } 
