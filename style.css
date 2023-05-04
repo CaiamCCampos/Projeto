@@ -17,14 +17,13 @@
  }
 
  ::-webkit-scrollbar{ /* É um pseudo elemento nao padrao, que permite modificar a barra de rolagem do navegador*/
-    background-image: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
     width: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 ::-webkit-scrollbar-thumb{ /*É um pseudo elemento nao padrao, que permite modificar a barra de rolagem arrastavel do navegador */
     border-radius: 5px;
-    background-color: rgba(1, 82, 1, 0.822);
+    background-image: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
 }
 html{
     scroll-behavior: smooth;
