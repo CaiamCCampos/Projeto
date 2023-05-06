@@ -62,7 +62,7 @@ html{
 label{
     transform: translatey(-15px);
     left: 0.5vh;
-    top: 1.5vh;
+    top: 1.7vh;
     position: fixed;
     z-index: 1;
     cursor: pointer;
@@ -70,7 +70,7 @@ label{
 .menuburger {
     width: 150px;
     height: 100vh;
-   background-color: rgba(211, 211, 211, 0.445);
+    background-image: linear-gradient( 45deg,  rgba(13, 133, 13, 0.596) 10%, rgba(4, 189, 4, 0.514)30% ,rgba(177, 255, 31, 0.527) );
     position: absolute;
     left: -250px;
     top: 0px;  
