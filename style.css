@@ -31,49 +31,68 @@ html{
 :target{ 
     scroll-margin-top: 1em;
 }
-.menu div a {
-    text-decoration: none; 
 
-}
 #icolampada{
     display: flex;
     width: 100%;
     height: 100%;
 }
-nav{
-    width: 98%;
-    overflow: hidden;
-    position: fixed;
-    top: 0.5%;
-    background-image: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );/* colocando cor de fundo em degrade*/
-    box-shadow: 1px 1px 1px 1px rgba(6, 207, 6, 0.815);
-    border-radius: 3px;
-}
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-    align-items: center;
-    height: 30px;
-    
+.menuburger .topicoburger{
+    text-decoration: none;
+    display: block;
+    width: 96%;
+    padding: 20px 5px;
+    color: black;
+}
+#menuburger{
+    width: 50px;
+    height: 50px;
    
 }
-.menu  a {
-    font-size: medium;
-    font-family: var(--fonte2); /* usando a variavel das fontes*/
-    text-shadow: 0 px -1px 5px rgb(3, 36, 3);
-    font-weight: bold;
-    
-    
+ #menuburger:hover{
+    height: 60px;
+    transition:  0.5s;
 }
-.menu div  {
-    right: 3%;
-    width: max-content;
-    height: max-content;
+.topicoburger:hover{
+    background-color: rgba(10, 10, 15, 0.685);
+    color: aliceblue;
+    transition: 1s;
+}
+label{
+    transform: translatey(-15px);
+    left: 0.5vh;
+    top: 1.5vh;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+}
+.menuburger {
+    width: 150px;
+    height: 100vh;
+   background-color: rgba(211, 211, 211, 0.445);
     position: absolute;
-    
+    left: -250px;
+    top: 0px;  
 }
+.menuburger ul {
+    position: absolute;
+    list-style: none;
+    padding-inline-start: 1%;
+    width: 100%;
+    top: 35px;
+    font-family: var(--fonte2);
+    font-size: large;
+}
+#check[type="checkbox"]{
+    display: none;
+}
+#check[type="checkbox"]:checked ~.menuburger{
+    transform: translateX(250px);
+    transition: 2s;
+    position: fixed;
+}
+
 #capa{
     width: 95%;
     height: 300px; 
@@ -128,7 +147,7 @@ nav{
 }
 .padraoConteudo{
     display: inline-flex;
-    width: 90%;
+    width: 95%;
     height: max-content;
     align-items: center;
     justify-content: space-evenly;
@@ -284,6 +303,13 @@ address #citacao{
 @media screen and (max-width: 600px){
     .padraoConteudo {
         flex-direction: column;
+        
+
+    }   
+} 
+@media screen and (min-width: 600px){
+    label {
+        left: 10px;
         
 
     }   
