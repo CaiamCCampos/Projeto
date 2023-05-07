@@ -98,7 +98,7 @@ label{
     height: 99%; 
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.479) ;
-    background-image: url(imagens/pexels-pixabay-356036.jpg);
+    background-image: url(imagens/fotocapa.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -275,7 +275,7 @@ label{
     flex-wrap: wrap;
     width: 90%;
     height: 300px;
-    background-image: url(imagens/paineis-solares-e-usina-eolica-fora.jpg);
+    background-image: url(imagens/paineis-solares-e-usina-eolica-fora2.jpg);
     background-attachment: fixed;
     background-position: center top;
     background-size: cover;
