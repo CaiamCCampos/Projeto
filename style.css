@@ -37,7 +37,6 @@ html{
     width: 100%;
     height: 100%;
 }
-
 .menuburger .topicoburger{
     text-decoration: none;
     display: block;
@@ -89,7 +88,7 @@ label{
 }
 #check[type="checkbox"]:checked ~.menuburger{
     transform: translateX(250px);
-    transition: 2s;
+    transition: 1s;
     position: fixed;
 }
 
@@ -112,7 +111,7 @@ label{
     justify-content: space-around;
     align-content: space-around;
     flex-wrap: wrap;
-    animation: fadein 4s linear;
+    animation: fadein 2s linear;
 }
 #capaslogan span{
     font-family: var(--fonte1);
@@ -223,11 +222,11 @@ label{
 
 .botao #h1botao:hover { /* essa pseudo classe serve para quando o mouse estiver em cima desse elemento acontecera o que nós colocarmos dentro das chaves*/
     box-shadow: 2px 2px 2px 2px rgba(2, 133, 41, 0.582);
-    transition: 1s; /* tempo de transiçao da mudança de estado do elemento*/
+    transition: 0.5s; /* tempo de transiçao da mudança de estado do elemento*/
 }
 .botao a:hover {
     font-size: large;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 
@@ -274,7 +273,7 @@ label{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    height: 300px;
+    height: 90vh;
     background-image: url(imagens/paineis-solares-e-usina-eolica-fora2.jpg);
     background-attachment: fixed;
     background-position: center top;
