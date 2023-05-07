@@ -105,12 +105,13 @@ label{
 #capaslogan{
     position: absolute;
     width: 80%;
-    height: 100px;
+    height: max-content;
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
     animation: fadein 4s linear;
 }
 #capaslogan span{
@@ -121,6 +122,13 @@ label{
     -webkit-background-clip: text;
     color: transparent;
     font-weight: lighter;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 10px 0px 10px 0px;
+    align-items: center;
+    justify-content: center;
+    
 }
 #icohome{
     width: 30px;
@@ -165,7 +173,11 @@ label{
     position: absolute;
 }
 
-
+.icocapa{
+    width: 60px;
+    height: 60px;
+   
+}
 
 
 
@@ -327,11 +339,8 @@ address #citacao{
 } 
 
 @media screen and (max-width: 500px) {
-    #capaslogan span {
-        justify-content: space-around;
-        font-size: medium;
-        width: max-content;
-        height: 40px;
+    #capaslogan {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 500px) {
