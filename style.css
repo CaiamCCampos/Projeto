@@ -47,7 +47,6 @@ html{
 #menuburger{
     width: 50px;
     height: 50px;
-   
 }
  #menuburger:hover{
     height: 60px;
@@ -91,7 +90,6 @@ label{
     transition: 1s;
     position: fixed;
 }
-
 #capa{
     width: 99%;
     height: 99%; 
@@ -126,8 +124,7 @@ label{
     align-content: space-around;
     margin: 10px 0px 10px 0px;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 #icohome{
     width: 30px;
@@ -144,8 +141,7 @@ label{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 .conteudo {
     display: flex;
@@ -165,22 +161,17 @@ label{
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
 .padrao a {
     width: max-content;
     height: max-content;
     position: absolute;
     
 }
-
 .icocapa{
     width: 60px;
     height: 60px;
    
 }
-
-
-
 .padrao a:hover {
     background-color: rgba(155, 155, 155, 0);
     border-radius: 20px 20px;
@@ -217,7 +208,7 @@ label{
     height: max-content;
     width: 100%;
     justify-content: center;
-    margin: 3% 0px 3% 0px
+    
 }
 
 .botao #h1botao:hover { /* essa pseudo classe serve para quando o mouse estiver em cima desse elemento acontecera o que nós colocarmos dentro das chaves*/
@@ -228,8 +219,6 @@ label{
     font-size: large;
     transition: 0.5s;
 }
-
-
 .padraoConteudo img {
     width: 250px;
     height: 250px;
@@ -256,7 +245,6 @@ label{
     overflow-y: auto;
     padding: 10px;
 }
-
 .conteudo h1{
     font-family: var(--fonte3);
     color: yellowgreen;
@@ -281,6 +269,29 @@ label{
     margin: 5%;
     border-radius: 2px;
 }
+.botaoup{
+    
+    display: inline-flex;
+    width: max-content;
+    height: max-content;
+    
+}
+#botaoupid img{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 1;
+    top: 92vh;
+    right: 0.5%;
+    animation: fadein 2s linear;
+    border-radius: 50% 50%;
+}
+#botaoupid img:hover{
+    width: 45px;
+    height: 45px;
+    box-shadow: 5px 2px 5px 2px rgba(128, 128, 128, 0.582);
+}
+
 footer{
     display: flex;
     width: 98%;
