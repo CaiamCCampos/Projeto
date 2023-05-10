@@ -99,6 +99,42 @@ label{
     background-size: cover;
     background-position: center;
 }
+#capausina{
+    width: 99%;
+    height: 99%; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.479) ;
+    background-image: url(imagens/seila.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#capasistema{
+    width: 99%;
+    height: 99%; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.479) ;
+    background-image: url(imagens/energia-solar.png);
+    background-size: cover;
+    background-position: center;
+}
+#capaorigem{
+    width: 99%;
+    height: 99%; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.479) ;
+    background-image: url(imagens/seila.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#capaorigemP{
+    width: 99%;
+    height: 99%; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.479) ;
+    background-image: url(imagens/fotocapa\ pix.jpg);
+    background-size: cover;
+    background-position: center;
+}
 #capapg1{
     width: 99%;
     height: 99%; 
@@ -143,7 +179,7 @@ label{
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: space-around;
     flex-wrap: wrap;
     animation: fadein 2s linear;
@@ -385,18 +421,53 @@ address #citacao{
     margin: 5%;
     border-radius: 2px;
 }
-.imgParalaxS {
+.imgParalaxorigem {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     height: 90vh;
-    background-image: url(imagens/teste.jpeg);
+    background-image: url(imagens/solpara.jpg);
     background-attachment: fixed;
     background-position: center right;
     background-size: cover;
     margin: 5%;
     border-radius: 2px;
-
+}
+.imgParalaxusina {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 90vh;
+    background-image: url(imagens/usinasold.jpg);
+    background-attachment: fixed;
+    background-position: center ;
+    background-size: cover;
+    margin: 5%;
+    border-radius: 2px;
+}
+.imgParalaxsistema {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 90vh;
+    background-image: url(imagens/Foto-Paulo-Cunha-para-artigo-scaled.jpg);
+    background-attachment: fixed;
+    background-position: center left;
+    background-size: cover;
+    margin: 5%;
+    border-radius: 2px;
+}
+.imgParalaxorigemp {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 90vh;
+    background-image: url(imagens/enel.jpg);
+    background-attachment: fixed;
+    background-position: center right;
+    background-size: cover;
+    margin: 5%;
+    border-radius: 2px;
 }
 .imgParalaxH {
     display: flex;
