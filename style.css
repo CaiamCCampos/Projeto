@@ -11,11 +11,19 @@
     --fonte1:'Carter One', cursive;
     --fonte2:'Dancing Script', cursive;
     --fonte3:'Mandali', sans-serif; 
-    --gradient: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );;
+    --gradient: linear-gradient( to left,  rgba(13, 133, 13, 0.911) , rgba(4, 189, 4, 0.911) ,rgba(176, 255, 31, 0.911) );;
 }
 @keyframes fadein {  /* a regra keyframe ira definir as etapas da sua animaçao (animation)*/
   from {opacity: 0} 
   to {opacity: 1} 
+ }
+ @keyframes gradient {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
  }
 
  ::-webkit-scrollbar{ /* É um pseudo elemento nao padrao, que permite modificar a barra de rolagem do navegador*/
@@ -326,15 +334,24 @@ label{
     flex-wrap: wrap;
 }
 .auxbotao{
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     height: max-content;
     width: max-content;
     justify-content: center; 
-    border-top: 4px solid aqua;
-    border-image: var(--gradient)1;
     padding-top: 3%;
-    padding-bottom: 3%;
-    
+    padding-bottom: 3%; 
+}
+.auxbotao::before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-image: var(--gradient);
+    background-size: 500% 500% ;
+    animation: gradient 2s infinite alternate ; 
+    display: block;
+    margin-bottom: 10% ;
+    border-radius: 10%;
 }
 
 .botao #h1botao:hover { /* essa pseudo classe serve para quando o mouse estiver em cima desse elemento acontecera o que nós colocarmos dentro das chaves*/
@@ -385,18 +402,20 @@ label{
     width: max-content;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 4px solid aqua;
-    border-image: var(--gradient)1;
+    
     padding-top: 5%;
     padding-bottom: 5%;
-    border-radius: 10%;
+    border-radius: 50%;
 }
-.topico::after{
-    border-bottom: 4px solid aqua;
-    border-image: var(--gradient)1;
-    padding-top: 3%;
-    padding-bottom: 3%;
+.topico::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-image: var(--gradient);
+    background-size: 300% 300% ;
+    display: block;
     border-radius: 10%;
+    animation: gradient 4s infinite alternate ; 
 }
 .imgParalax {
     display: flex;
