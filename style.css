@@ -11,8 +11,8 @@
     --fonte1:'Carter One', cursive;
     --fonte2:'Dancing Script', cursive;
     --fonte3:'Mandali', sans-serif; 
-    --gradient: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
-    --gradient1: linear-gradient( 90deg ,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
+    --gradient: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) , rgba(4, 189, 4, 0.911) ,rgba(176, 255, 31, 0.911) );
+    --gradient1: linear-gradient( 90deg ,  rgba(13, 133, 13, 0.911) , rgba(4, 189, 4, 0.911) ,rgba(176, 255, 31, 0.911) );
 }
 @keyframes fadein {  /* a regra keyframe ira definir as etapas da sua animaçao (animation)*/
   from {opacity: 0} 
