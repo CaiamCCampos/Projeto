@@ -11,8 +11,8 @@
     --fonte1:'Carter One', cursive;
     --fonte2:'Dancing Script', cursive;
     --fonte3:'Mandali', sans-serif; 
-    --gradient: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) , rgba(4, 189, 4, 0.911) ,rgba(176, 255, 31, 0.911) );
-    --gradient1: linear-gradient( 90deg ,  rgba(13, 133, 13, 0.911) , rgba(4, 189, 4, 0.911) ,rgba(176, 255, 31, 0.911) );
+    --gradient: linear-gradient( 45deg,  rgba(20, 158, 20, 0.911) , rgba(4, 189, 4, 0.911) ,rgba(176, 255, 31, 0.911) );
+    --gradient1: linear-gradient( 90deg ,  rgba(17, 161, 17, 0.911) , rgba(4, 189, 4, 0.911) ,rgba(176, 255, 31, 0.911) );
 }
 @keyframes fadein {  /* a regra keyframe ira definir as etapas da sua animaçao (animation)*/
   from {opacity: 0} 
@@ -352,7 +352,7 @@ label{
     animation: gradient 4s infinite alternate ; 
     display: block;
     margin-bottom: 10% ;
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
 .botao #h1botao:hover { /* essa pseudo classe serve para quando o mouse estiver em cima desse elemento acontecera o que nós colocarmos dentro das chaves*/
@@ -415,7 +415,7 @@ label{
     background-image: var(--gradient);
     background-size: 500% 500% ;
     display: block;
-    border-radius: 10%;
+    border-radius: 50%;
     animation: gradient 4s infinite alternate ; 
 }
 .imgParalax {
