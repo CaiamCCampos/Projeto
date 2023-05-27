@@ -11,7 +11,8 @@
     --fonte1:'Carter One', cursive;
     --fonte2:'Dancing Script', cursive;
     --fonte3:'Mandali', sans-serif; 
-    --gradient: linear-gradient( to left,  rgba(13, 133, 13, 0.911) , rgba(4, 189, 4, 0.911) ,rgba(176, 255, 31, 0.911) );;
+    --gradient: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
+    --gradient1: linear-gradient( 90deg ,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
 }
 @keyframes fadein {  /* a regra keyframe ira definir as etapas da sua animaçao (animation)*/
   from {opacity: 0} 
@@ -33,7 +34,7 @@
 }
 ::-webkit-scrollbar-thumb{ /*É um pseudo elemento nao padrao, que permite modificar a barra de rolagem arrastavel do navegador */
     border-radius: 5px;
-    background-image: linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
+    background-image:linear-gradient( 45deg,  rgba(13, 133, 13, 0.911) 10%, rgba(4, 189, 4, 0.911)30% ,rgba(176, 255, 31, 0.911) );
 }
 html{
     scroll-behavior: smooth;
@@ -346,9 +347,9 @@ label{
     content: '';
     width: 100%;
     height: 4px;
-    background-image: var(--gradient);
+    background-image: var(--gradient1);
     background-size: 500% 500% ;
-    animation: gradient 2s infinite alternate ; 
+    animation: gradient 4s infinite alternate ; 
     display: block;
     margin-bottom: 10% ;
     border-radius: 10%;
@@ -412,7 +413,7 @@ label{
     width: 100%;
     height: 4px;
     background-image: var(--gradient);
-    background-size: 300% 300% ;
+    background-size: 500% 500% ;
     display: block;
     border-radius: 10%;
     animation: gradient 4s infinite alternate ; 
